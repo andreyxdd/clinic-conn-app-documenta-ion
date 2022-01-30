@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/menu.css"> -->
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/component.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/lightslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <script src="js/modernizr.custom.js"></script>
+
+    <title>worldmedexpo</title>
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="autor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="img/close.png" alt="" class="close-img"></span>
+                    </button>
+                </div>
+                <div class="modal-body mx-auto">
+                    <h5 class="modal-title text-center mx-auto" id="exampleModalLabel">Вход</h5>
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Пароль">
+                    <button class="last_pass float-right js_modal_open" data-toggle="modal"
+                        data-target="#lastPass">Забыли
+                        пароль?</button>
+                    <div class="clearfix"></div>
+                    <div class="checkbox ">
+                        <label>
+                            <input type="checkbox">
+                            <span>Запомнить меня</span>
+                        </label>
+                    </div>
+                    <button class="search_but">Вход</button>
+                    <p class="first_time text-center">Впервые на Video Clinic?</p>
+                    <button class="last_pass reg_butt w-100 js_modal_open" data-toggle="modal"
+                        data-target="#reg">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lastPass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="img/close.png" alt="" class="close-img"></span>
+                    </button>
+                </div>
+                <div class="modal-body mx-auto">
+                    <h5 class="modal-title text-center mx-auto" id="exampleModalLabel">Забыли пароль?</h5>
+                    <p class="first_time text-center">Введите ваш E-mail, и мы вышлем вам инструкции для получения
+                        нового пароля
+                    </p>
+                    <input type="text" placeholder="E-mail" style="margin-bottom: 0; margin-top: 10px;">
+                    <button class="search_but">Подтвердить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="reg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="img/close.png" alt="" class="close-img"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-3 descr" id="exampleModalLabel">Для того, чтобы
+                        приступить к
+                        регистрации, выберите категорию</h5>
+                    <div class=" mx-auto butt_select">
+                        <button class="search_but cat js_modal_open" data-toggle="modal" data-target="#fiz">Физическое
+                            лицо</button>
+                        <button class="search_but cat js_modal_open" data-toggle="modal"
+                            data-target="#comp">Компания</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="fiz" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="img/close.png" alt="" class="close-img"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-5" id="exampleModalLabel">Регистрация</h5>
+                    <input type="text" value="Имя*">
+                    <input type="text" value="Фамилия">
+                    <input type="text" value="E-mail*">
+                    <input type="text" value="Пароль*">
+                    <input type="text" value="Подтвердите пароль*">
+                    <div class="clearfix"></div>
+                    <div class="checkbox ">
+                        <label>
+                            <input type="checkbox">
+                            <span>Согласиться с </span><a href="#">офертой</a>
+                        </label>
+                    </div>
+                    <button class="search_but js_modal_open" data-toggle="modal"
+                        data-target="#confirm">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="comp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="img/close.png" alt="" class="close-img"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-1" id="exampleModalLabel">Регистрация</h5>
+                    <input type="text" value="Страна*">
+                    <input type="text" value="Город*">
+                    <input type="text" value="Сайт*">
+                    <input type="text" value="Название*">
+                    <p style="font-size: 20px; line-height: 24px; font-weight: 600;     margin-bottom: 10px;">Контактное
+                        лицо</p>
+                    <input type="text" value="ФИО*">
+                    <input type="text" value="Должность*">
+                    <input type="text" value="E-mail*">
+                    <input type="text" value="Пароль*">
+                    <input type="text" value="Подтвердите пароль*">
+                    <div class="clearfix"></div>
+                    <div class="checkbox ">
+                        <label>
+                            <input type="checkbox">
+                            <span>Согласиться с </span><a href="#">офертой</a>
+                        </label>
+                    </div>
+                    <button class="search_but js_modal_open" data-toggle="modal"
+                        data-target="#confirm">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center m-auto" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="img/close.png" alt="" class="close-img"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="end_reg">Для завершения регистрации подтвердите адрес электронной почты</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="thanks_for_subscription" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center m-auto" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="img/close.png" alt="" class="close-img"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="end_reg">Благодарим за подписку на рассылку новостей! Теперь вы первыми будете узнавать о
+                        различных
+                        мероприятиях и важных обновлениях сайта.</p>
+                    <p class="end_reg">Вы также можете подписаться на нас в <b>социальных сетях:</b></p>
+                    <div class="d-flex justify-content-around soc_link">
+                        <a href="javascript:void(0);" class="in"></a>
+                        <a href="javascript:void(0);" class="fb"></a>
+                        <a href="javascript:void(0);" class="inst"></a>
+                        <a href="javascript:void(0);" class="youtube"></a>
+                        <a href="javascript:void(0);" class="vk"></a>
+                        <a href="javascript:void(0);" class="tiktok"></a>
+                        <a href="javascript:void(0);" class="ok"></a>
+                        <a href="javascript:void(0);" class="twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="thanks_for_subscription2" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center m-auto" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="img/close.png" alt="" class="close-img"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="end_reg">Благодарим за интерес, но вы уже подписаны на нашу рассылку новостей! Мы
+                        продолжим делиться
+                        с вами информацией о различных мероприятиях и важных обновлениях сайта.</p>
+                    <p class="end_reg">Вы также можете подписаться на нас в <b>социальных сетях:</b></p>
+                    <div class="d-flex justify-content-around soc_link">
+                        <a href="javascript:void(0);" class="in"></a>
+                        <a href="javascript:void(0);" class="fb"></a>
+                        <a href="javascript:void(0);" class="inst"></a>
+                        <a href="javascript:void(0);" class="youtube"></a>
+                        <a href="javascript:void(0);" class="vk"></a>
+                        <a href="javascript:void(0);" class="tiktok"></a>
+                        <a href="javascript:void(0);" class="ok"></a>
+                        <a href="javascript:void(0);" class="twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade notification" id="notification1" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center m-auto" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="img/close.png" alt="" class="close-img"></span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="end_reg">Вам пришло сообщение от клиента <b>Дмитрий Ефремов</b></p>
+                    <a href="#">Прочитать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade notification" id="notification2" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center m-auto" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="img/close.png" alt="" class="close-img"></span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="end_reg">Вам выставлен счет от клиники <b>Ассута</b> за <b>второе мнение на “Общий анализ
+                            крови”</b>
+                    </p>
+                    <a href="#">Оплатить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade notification" id="notification3" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center m-auto" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="img/close.png" alt="" class="close-img"></span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="end_reg">Вам пришло второе мнение на<b>“Общий анализ крови”</b> от клиники <b>Ассута</b>
+                    </p>
+                    <a href="#">Скачать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade notification" id="notification4" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center m-auto" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="img/close.png" alt="" class="close-img"></span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="end_reg">Вам пришел заказ на второе мнение на <b>“Общий анализ крови”</b> от клиента
+                        <b>Дмитрий
+                            Ефремов</b>
+                    </p>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="js_modal_open" data-toggle="modal" data-target="#thanks_for_subscription">Благодарность
+        за подписку</button>
+    <button type="button" class="js_modal_open" data-toggle="modal"
+        data-target="#thanks_for_subscription2">Благодарность
+        за подписку2</button>
+    <button type="button" class="js_modal_open" data-toggle="modal" data-target="#notification1">уведомление1</button>
+    <button type="button" class="js_modal_open" data-toggle="modal" data-target="#notification2">уведомление2</button>
+    <button type="button" class="js_modal_open" data-toggle="modal" data-target="#notification3">уведомление3</button>
+    <button type="button" class="js_modal_open" data-toggle="modal" data-target="#notification4">уведомление4</button>
+
+    <header>
+        <div class="container inner_div d-block d-md-block">
+            <div class="row">
+                <div class="col-md-3 col-lg-2  col-8 ">
+                    <a href="#" class=""><img src="img/logo.png" alt="" class="logo"></a>
+                </div>
+                <div class="col-2 offset-2 d-md-none">
+                    <a href="#"><span class="burger"></span></a>
+                </div>
+                <div
+                    class="col-md-9 col-lg-9 offset-lg-1 d-flex align-items-center justify-content-between col-12 flex-wrap flex-md-nowrap">
+                    <input type="text" placeholder="Страна">
+                    <input type="text" placeholder="Город">
+                    <input type="text" placeholder="Название диагноза">
+                    <input type="text" placeholder="Код диагноза">
+                    <button class="search_but">Поиск</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="top_section  d-md-block">
+        <div class="container">
+            <div class="row " style="padding-top: 0px; padding-bottom: 15px;">
+                <div class="col-8 d-md-none">
+                    <a href="#" class=""><img src="img/logo.png" alt="" class="logo"></a>
+                </div>
+                <div class="col-2 offset-2 d-md-none">
+                    <a href="#"><span class="close"></span></a>
+                </div>
+                <div
+                    class="col-md-3 col-lg-2 col-sm-6 col-12 align-items-center d-flex justify-content-center justify-content-md-end">
+                    <div id="menu-trend" class="menu-trend">
+
+                        <a href="#"> Направления</a>
+                        <div class="trend">
+                            <button class="close_trend d-xl-none"><img src="img/close-bluel.png" alt=""></button>
+                            <ul>
+                                <li>
+                                    <p>А</p>
+                                    <a href="#">Акушерство и гинекология</a>
+                                    <a href="#">Аутоиммунные заболевания</a>
+                                </li>
+                                <li>
+                                    <p>Г</p>
+                                    <a href="#">Гастроэнтерология</a>
+                                </li>
+                                <li>
+                                    <p>Д</p>
+                                    <a href="#">Детская кардиохирургия</a>
+                                    <a href="#">Детская нейрохирургия</a>
+                                    <a href="#">Детская нейрохирургия</a>
+                                    <a href="#">Диагностика</a>
+                                </li>
+                                <li>
+                                    <p>И</p>
+                                    <a href="#">Иммунология</a>
+                                    <a href="#">Инфекционные болезни</a>
+
+                                </li>
+                                <li>
+                                    <p>К</p>
+                                    <a href="#">Кардиология</a>
+                                    <a href="#">Кардиохирургия</a>
+                                </li>
+                                <li>
+                                    <p>М</p>
+                                    <a href="#">Маммология</a>
+                                </li>
+                                <li>
+                                    <p>Н</p>
+                                    <a href="#">Наркология и алкоголизм</a>
+                                    <a href="#">Неврология</a>
+                                    <a href="#">Нейрохирургия</a>
+                                    <a href="#">Нефрология</a>
+                                </li>
+                                <li>
+                                    <p>О</p>
+                                    <a href="#">Ожирение</a>
+                                    <a href="#">Онкогематология</a>
+                                    <a href="#">Онкология</a>
+                                    <a href="#">Ортопедия и травматология</a>
+                                    <a href="#">Оториноларингология</a>
+                                    <a href="#">Офтальмология</a>
+                                </li>
+                                <li>
+                                    <p>П</p>
+                                    <a href="#">Педиатрия</a>
+                                    <a href="#">Пластическая хирургия</a>
+                                    <a href="#">Проктология</a>
+                                    <a href="#">Психиатрия</a>
+                                    <a href="#">Пульмонология</a>
+                                </li>
+                                <li>
+                                    <p>Р</p>
+                                    <a href="#">Реабилитация</a>
+                                    <a href="#">Ревмонология</a>
+                                    <a href="#">Репродуктология</a>
+                                </li>
+                                <li>
+                                    <p>С</p>
+                                    <a href="#">Санаторное лечение</a>
+                                    <a href="#">Сексология</a>
+                                    <a href="#">Стоматология</a>
+                                    <a href="#">Сосудистая хирургия</a>
+                                    <a href="#">Спинальная хирургия</a>
+                                </li>
+                                <li>
+                                    <p>Т</p>
+                                    <a href="#">Терапия</a>
+                                    <a href="#">Трансплатология</a>
+                                </li>
+                                <li>
+                                    <p>У</p>
+                                    <a href="#">Урология</a>
+                                </li>
+                                <li>
+                                    <p>Ф</p>
+                                    <a href="#">Флебология</a>
+                                </li>
+                                <li>
+                                    <p>Х</p>
+                                    <a href="#">Хирургия</a>
+                                    <a href="#">Хирургия кисти</a>
+                                    <a href="#">Хирургия снижения веса</a>
+                                </li>
+                                <li>
+                                    <p>Ч</p>
+                                    <a href="#">Чек-ап обследование</a>
+                                    <a href="#">Челюстно-лицевая хирургия</a>
+                                </li>
+                                <li>
+                                    <p>Э</p>
+                                    <a href="#">Эндокринология</a>
+                                    <a href="#">Эстетическая медицина
+                                        и косметология</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-md-7 col-lg-6 offset-lg-1 desc_a d-md-flex justify-content-around align-items-center col-12 ">
+                    <a class="d-md-inline " href="javascript:void(0);">Пациентам</a>
+                    <a class="d-md-inline " href="javascript:void(0);">Клиникам</a>
+                    <a class="d-md-inline " href="javascript:void(0);">Рекламодателям </a>
+                    <hr class="a_hr d-md-none">
+                </div>
+                <div
+                    class="autor offset-md-0 col-md-2 offset-lg-2 col-lg-1  d-md-flex justify-content-md-end justify-content-center align-items-center col-12 flex-nowrap col-sm-4">
+
+                    <!-- <a href="javascript:void(0);"><span class="autor"></span></a> -->
+                    <button type="button" class="izbr text-center ">
+                        <img src="img/Shape.png" alt="">
+                        <span class="num">2</span>
+                        <span class="d-md-none" style="color: #FFFFFF; font-size: 14px; font-family: Gilroy medium;">
+                            Просмотры</span>
+                    </button>
+                    <button type="button" class="izbr text-center ">
+                        <img src="img/izbr.png" alt="">
+                        <span class="num">2</span>
+                        <span class="d-md-none" style="color: #FFFFFF; font-size: 14px; font-family: Gilroy medium;">
+                            Избранное</span>
+                    </button>
+                    <button type="button" class="text-center" data-toggle="modal" data-target="#autor">
+                        <img src="img/autor.png" alt="">
+                        <span class="d-md-none" style="color: #FFFFFF; font-size: 14px; font-family: Gilroy medium;">
+                            Профиль</span>
+                </div>
+            </div>
+    </section>
+    <section class="search-result">
+        <div class="container">
+            <div class="row mt-5 mb-4">
+                <div class="col-md-12 ">
+                    <p class="head-result">Результаты поиска</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="slid">
+                        <img src="img/image14.png" alt="">
+                        <p>НМИЦ им. Алмазова</p>
+                        <p>Санкт-Петербург</p>
+                        <div class="link-slider">
+                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="slid">
+                        <img src="img/image13.png" alt="">
+                        <p>Евроонко</p>
+                        <p>Москва</p>
+                        <div class="link-slider">
+                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="slid">
+                        <img src="img/image10.png" alt="">
+                        <p>УКЛРЦ им. В.В. Тетюхина</p>
+                        <p>Нижний Тагил</p>
+                        <div class="link-slider">
+                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="slid">
+                        <img src="img/image9.png" alt="">
+                        <p>Клиника Кивач</p>
+                        <p>Карелия</p>
+                        <div class="link-slider">
+                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="slid">
+                        <img src="img/image14.png" alt="">
+                        <p>НМИЦ им. Алмазова</p>
+                        <p>Санкт-Петербург</p>
+                        <div class="link-slider">
+                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="slid">
+                        <img src="img/image13.png" alt="">
+                        <p>Евроонко</p>
+                        <p>Москва</p>
+                        <div class="link-slider">
+                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="slid">
+                        <img src="img/image10.png" alt="">
+                        <p>УКЛРЦ им. В.В. Тетюхина</p>
+                        <p>Нижний Тагил</p>
+                        <div class="link-slider">
+                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="slid">
+                        <img src="img/image9.png" alt="">
+                        <p>Клиника Кивач</p>
+                        <p>Карелия</p>
+                        <div class="link-slider">
+                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 paginat">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link " href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="">
+                <div class="row">
+                    <div class="col-md-5 offset-md-1 offset-lg-0  col-12 col-lg-3 order-lg-first order-2">
+                        <div class="contacts">
+                            <!-- <p class="head">Контакты</p> -->
+                            <a href="#" class="d-flex justify-content-start align-items-center"><span
+                                    class="map"></span>
+                                <p> 184 Lorem Rd, St Ipsum Road PLC 3021, London</p><br>
+                            </a>
+                            <a href="#" class="d-flex justify-content-start align-items-center"><span
+                                    class="phone"></span>
+                                <p>+372 521 30 60</p><br>
+                            </a>
+                            <a href="#" class="d-flex justify-content-start align-items-center"><span
+                                    class="contact"></span>
+                                <p>Contact@company.com</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-12 col-lg-7 order-1 ">
+                        <div class="contacts2 d-md-flex justify-content-around ">
+                            <div class="above">
+                                <a href="#">
+                                    <p>О нас</p>
+                                </a>
+                                <a href="#">
+                                    <p>Как стать участником экспо</p>
+                                </a>
+                                <a href="#">
+                                    <p>Связаться с нами</p>
+                                </a>
+                            </div>
+                            <div class="above">
+                                <a href="#">
+                                    <p>Пациентам</p>
+                                </a>
+                                <a href="#">
+                                    <p>Клиникам </p>
+                                </a>
+                                <a href="#">
+                                    <p>Рекламодаелям</p>
+                                </a>
+                            </div>
+                            <div class="above">
+
+                                <a href="#">
+                                    <p>Способы оплаты услуг</p>
+                                </a>
+                                <a href="#">
+                                    <p>Публичная оферта</p>
+                                </a>
+                                <a href="#">
+                                    <p>Вопросы и ответы</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-12 col-lg-2 order-md-last order-lg-last order-3">
+                        <div class="contacts3">
+                            <p class="head">Подпишитесь прямо сейчас</p>
+                            <p>Подпишитесь на рассылку новостей и получайте важную информацию раньше всех.</p>
+                            <div class="input-group search_al">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <img src="img/sent.png" alt="">
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div
+                        class="col-8 offset-2 col-md-8 offset-md-2 col-lg-4 offset-lg-4 d-flex justify-content-around soc_link">
+                        <a href="javascript:void(0);" class="in"></a>
+                        <a href="javascript:void(0);" class="fb"></a>
+                        <a href="javascript:void(0);" class="inst"></a>
+                        <a href="javascript:void(0);" class="youtube"></a>
+                        <a href="javascript:void(0);" class="vk"></a>
+                        <a href="javascript:void(0);" class="tiktok"></a>
+                        <a href="javascript:void(0);" class="ok"></a>
+                        <a href="javascript:void(0);" class="twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+-->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <!-- <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/jquery.maskedinput.js"></script> -->
+    <script src="js/lightslider.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

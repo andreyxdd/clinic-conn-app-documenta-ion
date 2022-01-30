@@ -1,0 +1,1311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/menu.css">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/component.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/lightslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/style-chat.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <script src="js/modernizr.custom.js"></script>
+
+    <title>worldmedexpo</title>
+</head>
+
+<body>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="autor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-auto">
+                    <h5 class="modal-title text-center mx-auto" id="">Вход</h5>
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Пароль">
+                    <button class="last_pass float-right js_modal_open" data-toggle="modal"
+                        data-target="#lastPass">Забыли
+                        пароль?</button>
+                    <div class="clearfix"></div>
+                    <div class="checkbox ">
+                        <label>
+                            <input type="checkbox">
+                            <span>Запомнить меня</span>
+                        </label>
+                    </div>
+                    <button class="search_but">Вход</button>
+                    <p class="first_time text-center">Впервые на Video Clinic?</p>
+                    <button class="last_pass reg_butt w-100 js_modal_open" data-toggle="modal"
+                        data-target="#reg">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lastPass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-auto">
+                    <h5 class="modal-title text-center mx-auto" id="">Забыли пароль?</h5>
+                    <p class="first_time text-center">Введите ваш E-mail, и мы вышлем вам инструкции для получения
+                        нового пароля
+                    </p>
+                    <input type="text" placeholder="E-mail" style="margin-bottom: 0; margin-top: 10px;">
+                    <button class="search_but">Подтвердить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="reg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-3 descr" id="">Для того, чтобы
+                        приступить к регистрации, выберите категорию</h5>
+                    <div class=" mx-auto butt_select">
+                        <button class="search_but cat js_modal_open" data-toggle="modal" data-target="#fiz">Физическое
+                            лицо</button>
+                        <button class="search_but cat js_modal_open" data-toggle="modal"
+                            data-target="#comp">Компания</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="fiz" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-5" id="">Регистрация</h5>
+                    <input type="text" value="Имя*">
+                    <input type="text" value="Фамилия">
+                    <input type="text" value="E-mail*">
+                    <input type="text" value="Пароль*">
+                    <input type="text" value="Подтвердите пароль*">
+                    <div class="clearfix"></div>
+                    <div class="checkbox ">
+                        <label>
+                            <input type="checkbox">
+                            <span>Согласиться с </span><a href="#">офертой</a>
+                        </label>
+                    </div>
+                    <button class="search_but js_modal_open" data-toggle="modal"
+                        data-target="#confirm">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="comp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-1" id="">Регистрация</h5>
+                    <input type="text" value="Страна*">
+                    <input type="text" value="Город*">
+                    <input type="text" value="Сайт*">
+                    <input type="text" value="Название*">
+                    <p style="font-size: 20px; line-height: 24px; font-weight: 600;     margin-bottom: 10px;">Контактное
+                        лицо</p>
+                    <input type="text" value="ФИО*">
+                    <input type="text" value="Должность*">
+                    <input type="text" value="E-mail*">
+                    <input type="text" value="Пароль*">
+                    <input type="text" value="Подтвердите пароль*">
+                    <div class="clearfix"></div>
+                    <div class="checkbox ">
+                        <label>
+                            <input type="checkbox">
+                            <span>Согласиться с </span><a href="#">офертой</a>
+                        </label>
+                    </div>
+                    <button class="search_but js_modal_open" data-toggle="modal"
+                        data-target="#confirm">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center m-auto" id=""></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="end_reg">Для завершения регистрации подтвердите адрес электронной почты</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="thanks_for_subscription" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center m-auto" id=""></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="end_reg">Благодарим за подписку на рассылку новостей! Теперь вы первыми будете узнавать о
+                        различных
+                        мероприятиях и важных обновлениях сайта.</p>
+                    <p class="end_reg">Вы также можете подписаться на нас в <b>социальных сетях:</b></p>
+                    <div class="d-flex justify-content-around soc_link">
+                        <a href="javascript:void(0);" class="in"></a>
+                        <a href="javascript:void(0);" class="fb"></a>
+                        <a href="javascript:void(0);" class="inst"></a>
+                        <a href="javascript:void(0);" class="youtube"></a>
+                        <a href="javascript:void(0);" class="vk"></a>
+                        <a href="javascript:void(0);" class="tiktok"></a>
+                        <a href="javascript:void(0);" class="ok"></a>
+                        <a href="javascript:void(0);" class="twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="thanks_for_subscription2" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center m-auto" id=""></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="end_reg">Благодарим за интерес, но вы уже подписаны на нашу рассылку новостей! Мы
+                        продолжим делиться
+                        с вами информацией о различных мероприятиях и важных обновлениях сайта.</p>
+                    <p class="end_reg">Вы также можете подписаться на нас в <b>социальных сетях:</b></p>
+                    <div class="d-flex justify-content-around soc_link">
+                        <a href="javascript:void(0);" class="in"></a>
+                        <a href="javascript:void(0);" class="fb"></a>
+                        <a href="javascript:void(0);" class="inst"></a>
+                        <a href="javascript:void(0);" class="youtube"></a>
+                        <a href="javascript:void(0);" class="vk"></a>
+                        <a href="javascript:void(0);" class="tiktok"></a>
+                        <a href="javascript:void(0);" class="ok"></a>
+                        <a href="javascript:void(0);" class="twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="del_dialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-3 notif">Вы действительно
+                        хотите <b>удалить всю переписку</b> с данным пользователем?</h5>
+                    <h5 class="modal-title text-center mx-auto mb-3 notif">Отменить это действие будет
+                        <b>невозможно</b>.
+                    </h5>
+                    <div class=" mx-auto butt_select text-center">
+                        <button class="search_but cat js_modal_open" data-toggle="modal"
+                            data-target="#fiz">Удалить</button>
+                        <a href="#">Отменить</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="pay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-5 notif">Оплатить счет</h5>
+                    <label for="">Услуга</label>
+                    <select name="" id="">
+                        <option value="">Перевод “Общий анализ крови </option>
+                        <option value="">Еще счет</option>
+                    </select>
+                    <p class="normal_p">Сумма: <span>500</span> $</p>
+                    <div class=" mx-auto butt_select text-center">
+                        <button class="search_but cat js_modal_open">Оплатить</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="history" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-5 notif">История денежных операций</h5>
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Операция</th>
+                                <th>Сумма</th>
+                                <th>Дата</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="img/arrow-down.png" alt="" class="enrollment"></td>
+                                <td>
+                                    <p class="name-enrollment">Общий анализ крови</p>
+                                    <p class="fio">Дмитрий Ефремов </p>
+                                </td>
+                                <td><span>500</span>Р </td>
+                                <td>21.02.2021</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/arrow-down.png" alt="" class="enrollment"></td>
+                                <td>
+                                    <p class="name-enrollment">Зачисление</p>
+                                </td>
+                                <td><span>1000</span>Р </td>
+                                <td>21.02.2021</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/arrow-up.png" alt="" class="output"></td>
+                                <td>
+                                    <p class="name-enrollment">Вывод средств</p>
+                                </td>
+                                <td><span>22 000</span>Р </td>
+                                <td>21.02.2021</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/arrow-down.png" alt="" class="enrollment"></td>
+                                <td>
+                                    <p class="name-enrollment">Общий анализ крови</p>
+                                    <p class="fio">Дмитрий Ефремов </p>
+                                </td>
+                                <td><span>500</span>Р </td>
+                                <td>21.02.2021</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/arrow-down.png" alt="" class="enrollment"></td>
+                                <td>
+                                    <p class="name-enrollment">Зачисление</p>
+                                </td>
+                                <td><span>1000</span>Р </td>
+                                <td>21.02.2021</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/arrow-up.png" alt="" class="output"></td>
+                                <td>
+                                    <p class="name-enrollment">Вывод средств</p>
+                                </td>
+                                <td><span>2 000</span>Р </td>
+                                <td>21.02.2021</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <div class="text-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link " href="#" aria-label="Previous">
+                                        <span aria-hidden="true"><i class="fa fa-angle-left"
+                                                aria-hidden="true"></i></span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true"><i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="withdraw-funds" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-5 notif">Вывести средства</h5>
+                    <label for="">Счет</label>
+                    <select name="" id="">
+                        <option value="">PayPal </option>
+                        <option value="">Еще счет</option>
+                    </select>
+                    <p class="normal_p">Сумма</p>
+                    <input type="text" placeholder="Введите сумму">
+                    <p class="prompt mt-n3 mb-3">Комиссия: 100 р.</p>
+                    <div class=" mx-auto butt_select text-center">
+                        <button class="search_but cat js_modal_open">Вывести</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="raise-ratings" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-5 notif">Поднять в рейтинге</h5>
+                    <ul class="nav nav-pills " id="pills-rating" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="city-rating" data-toggle="pill" href="#pills-city-rating"
+                                role="tab" aria-controls="pills-city-rating" aria-selected="true">Город</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " id="category" data-toggle="pill" href="#pills-category" role="tab"
+                                aria-controls="pills-category" aria-selected="false">Категория</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-city-rating" role="tabpanel"
+                            aria-labelledby="pills-city-rating">
+                            <label for="">Количество позиций</label>
+                            <select name="" id="">
+                                <option value="">5 </option>
+                                <option value="">10</option>
+                            </select>
+                            <p class="normal_p">Сумма: <span>23 000</span> Р </p>
+                            <div class=" mx-auto butt_select text-center">
+                                <button class="search_but cat js_modal_open">Поднять</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade " id="pills-category" role="tabpanel"
+                            aria-labelledby="pills-category">
+                            <label for="">Категория</label>
+                            <select name="" id="">
+                                <option value="">PayPal </option>
+                                <option value="">Еще что-то</option>
+                            </select>
+                            <label for="">Количество позиций</label>
+                            <select name="" id="">
+                                <option value="">5 </option>
+                                <option value="">10</option>
+                            </select>
+                            <p class="normal_p">Сумма: <span>23 000</span> Р </p>
+                            <div class=" mx-auto butt_select text-center">
+                                <button class="search_but cat js_modal_open">Поднять</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="insufficient-funds" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-3 notif">На вашем счете недостаточно средств для
+                        выполнения данной операции.</h5>
+                    <h5 class="modal-title text-center mx-auto mb-3 notif"><b>Пополните баланс</b>, чтобы продолжить.
+                    </h5>
+                    <div class=" mx-auto butt_select text-center">
+                        <button class="search_but cat js_modal_open" data-toggle="modal"
+                            data-target="#fiz">Пополнить</button>
+                        <a href="#">Отменить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="bill" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-5 notif">Выставить счет</h5>
+                    <label for="">Выберите клиента</label>
+                    <select name="" id="">
+                        <option value="">Дмитрий Ефремов </option>
+                        <option value="">Иван Иванов</option>
+                    </select>
+                    <label for="">Выберите услугу</label>
+                    <select name="" id="">
+                        <option value="">Мнение для “Общий анализ кр </option>
+                        <option value="">Еще услуга</option>
+                    </select>
+                    <label for="">Сумма</label>
+                    <input type="text" placeholder="Введите сумму" class="mt-2">
+                    <div class=" mx-auto butt_select text-center">
+                        <button class="search_but cat js_modal_open">Отправить</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="send-opinion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title text-center mx-auto mb-5 notif">Отправить мнение</h5>
+                    <label for="">Выберите клиента</label>
+                    <select name="" id="">
+                        <option value="">Дмитрий Ефремов </option>
+                        <option value="">Иван Иванов</option>
+                    </select>
+                    <label for="">Выберите услугу</label>
+                    <select name="" id="">
+                        <option value="">Мнение для “Общий анализ кр </option>
+                        <option value="">Еще услуга</option>
+                    </select>
+                    <label for="">Загрузите файл</label>
+                    <div class="input-group mb-3 mt-2">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile5">
+                            <label class="custom-file-label " for="inputGroupFile5"><span>Выбрать
+                                    файл</span></label>
+                        </div>
+                    </div>
+                    <div class=" mx-auto butt_select text-center">
+                        <button class="search_but cat js_modal_open">Отправить</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <button type="button" class="js_modal_open" data-toggle="modal" data-target="#del_dialog">Удалить диалог</button>
+    <button type="button" class="js_modal_open" data-toggle="modal" data-target="#raise-ratings">Поднять в
+        рейтинге</button>
+    <button type="button" class="js_modal_open" data-toggle="modal" data-target="#insufficient-funds">Недостаточно
+        средств</button>
+    <button type="button" class="js_modal_open" data-toggle="modal" data-target="#send-opinion">Отправить
+        мнение</button>
+
+
+
+
+    <header>
+        <div class="container inner_div d-block d-md-block">
+            <div class="row">
+                <div class="col-md-3 col-lg-2  col-8 ">
+                    <a href="#" class=""><img src="img/logo.png" alt="" class="logo"></a>
+                </div>
+                <div class="col-2 offset-2 d-md-none">
+                    <a href="#"><span class="burger"></span></a>
+                </div>
+                <div
+                    class="col-md-9 col-lg-9 offset-lg-1 d-flex align-items-center justify-content-between col-12 flex-wrap flex-md-nowrap">
+                    <input type="text" placeholder="Страна">
+                    <input type="text" placeholder="Город">
+                    <input type="text" placeholder="Название диагноза">
+                    <input type="text" placeholder="Код диагноза">
+                    <button class="search_but">Поиск</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="top_section  d-md-block">
+        <div class="container">
+            <div class="row " style="padding-top: 0px; padding-bottom: 15px;">
+                <div class="col-8 d-md-none">
+                    <a href="#" class=""><img src="img/logo.png" alt="" class="logo"></a>
+                </div>
+                <div class="col-2 offset-2 d-md-none">
+                    <a href="#"><span class="close"></span></a>
+                </div>
+                <div
+                    class="col-md-3 col-lg-2 col-sm-6 col-12 align-items-center d-flex justify-content-center justify-content-md-end">
+                    <div id="menu-trend" class="menu-trend">
+
+                        <a href="#"> Направления</a>
+                        <div class="trend">
+                            <button class="close_trend d-xl-none"><img src="img/close-bluel.png" alt=""></button>
+                            <ul>
+                                <li>
+                                    <p>А</p>
+                                    <a href="#">Акушерство и гинекология</a>
+                                    <a href="#">Аутоиммунные заболевания</a>
+                                </li>
+                                <li>
+                                    <p>Г</p>
+                                    <a href="#">Гастроэнтерология</a>
+                                </li>
+                                <li>
+                                    <p>Д</p>
+                                    <a href="#">Детская кардиохирургия</a>
+                                    <a href="#">Детская нейрохирургия</a>
+                                    <a href="#">Детская нейрохирургия</a>
+                                    <a href="#">Диагностика</a>
+                                </li>
+                                <li>
+                                    <p>И</p>
+                                    <a href="#">Иммунология</a>
+                                    <a href="#">Инфекционные болезни</a>
+
+                                </li>
+                                <li>
+                                    <p>К</p>
+                                    <a href="#">Кардиология</a>
+                                    <a href="#">Кардиохирургия</a>
+                                </li>
+                                <li>
+                                    <p>М</p>
+                                    <a href="#">Маммология</a>
+                                </li>
+                                <li>
+                                    <p>Н</p>
+                                    <a href="#">Наркология и алкоголизм</a>
+                                    <a href="#">Неврология</a>
+                                    <a href="#">Нейрохирургия</a>
+                                    <a href="#">Нефрология</a>
+                                </li>
+                                <li>
+                                    <p>О</p>
+                                    <a href="#">Ожирение</a>
+                                    <a href="#">Онкогематология</a>
+                                    <a href="#">Онкология</a>
+                                    <a href="#">Ортопедия и травматология</a>
+                                    <a href="#">Оториноларингология</a>
+                                    <a href="#">Офтальмология</a>
+                                </li>
+                                <li>
+                                    <p>П</p>
+                                    <a href="#">Педиатрия</a>
+                                    <a href="#">Пластическая хирургия</a>
+                                    <a href="#">Проктология</a>
+                                    <a href="#">Психиатрия</a>
+                                    <a href="#">Пульмонология</a>
+                                </li>
+                                <li>
+                                    <p>Р</p>
+                                    <a href="#">Реабилитация</a>
+                                    <a href="#">Ревмонология</a>
+                                    <a href="#">Репродуктология</a>
+                                </li>
+                                <li>
+                                    <p>С</p>
+                                    <a href="#">Санаторное лечение</a>
+                                    <a href="#">Сексология</a>
+                                    <a href="#">Стоматология</a>
+                                    <a href="#">Сосудистая хирургия</a>
+                                    <a href="#">Спинальная хирургия</a>
+                                </li>
+                                <li>
+                                    <p>Т</p>
+                                    <a href="#">Терапия</a>
+                                    <a href="#">Трансплатология</a>
+                                </li>
+                                <li>
+                                    <p>У</p>
+                                    <a href="#">Урология</a>
+                                </li>
+                                <li>
+                                    <p>Ф</p>
+                                    <a href="#">Флебология</a>
+                                </li>
+                                <li>
+                                    <p>Х</p>
+                                    <a href="#">Хирургия</a>
+                                    <a href="#">Хирургия кисти</a>
+                                    <a href="#">Хирургия снижения веса</a>
+                                </li>
+                                <li>
+                                    <p>Ч</p>
+                                    <a href="#">Чек-ап обследование</a>
+                                    <a href="#">Челюстно-лицевая хирургия</a>
+                                </li>
+                                <li>
+                                    <p>Э</p>
+                                    <a href="#">Эндокринология</a>
+                                    <a href="#">Эстетическая медицина
+                                        и косметология</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-md-7 col-lg-6 offset-lg-1 desc_a d-md-flex justify-content-around align-items-center col-12 ">
+                    <a class="d-md-inline " href="javascript:void(0);">Пациентам</a>
+                    <a class="d-md-inline " href="javascript:void(0);">Клиникам</a>
+                    <a class="d-md-inline " href="javascript:void(0);">Рекламодателям </a>
+                    <hr class="a_hr d-md-none">
+                </div>
+                <div
+                    class="autor offset-md-0 col-md-2 offset-lg-2 col-lg-1  d-md-flex justify-content-md-end justify-content-center align-items-center col-12 flex-nowrap col-sm-4">
+
+                    <!-- <a href="javascript:void(0);"><span class="autor"></span></a> -->
+                    <button type="button" class="izbr text-center ">
+                        <img src="img/Shape.png" alt="">
+                        <span class="num">2</span>
+                        <span class="d-md-none" style="color: #FFFFFF; font-size: 14px; font-family: Gilroy medium;">
+                            Просмотры</span>
+                    </button>
+                    <button type="button" class="izbr text-center ">
+                        <img src="img/izbr.png" alt="">
+                        <span class="num">2</span>
+                        <span class="d-md-none" style="color: #FFFFFF; font-size: 14px; font-family: Gilroy medium;">
+                            Избранное</span>
+                    </button>
+                    <button type="button" class="text-center" data-toggle="modal" data-target="#autor">
+                        <img src="img/autor.png" alt="">
+                        <span class="d-md-none" style="color: #FFFFFF; font-size: 14px; font-family: Gilroy medium;">
+                            Профиль</span>
+                </div>
+            </div>
+    </section>
+    <section class="lk_clinic  d-lg-block">
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 my-4">
+                        <a href="#"><img src="img/back.png" alt="back" class="back"></a>
+                    </div>
+                </div>
+                <div class="row d-flex  align-items-center mb-md-5">
+                    <div class="col-md-5 col-lg-4 col-12 col-xl-3">
+                        <div class="blue_div d-flex justify-content-between align-items-center">
+                            <img src="img/dollar-circle.png" alt="">
+                            <div class="">
+                                <p>К оплате</p>
+                                <p class="summ"><span>500</span> $</p>
+                            </div>
+                            <div class="">
+                                <p>Ваш баланс</p>
+                                <p class="balanse"><span>1 000</span> $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 flex-wrap flex-lg-nowrap col-md-7 col-lg-8 col-xl-7 d-flex justify-content-between top-link">
+                        <button
+                            class="add_balanse d-flex justify-content-start justify-content-md-center align-items-center">
+                            <img src="img/money-recive.png" alt="">
+                            <span>Пополнить баланс</span>
+                        </button>
+                        <button
+                            class="add_balanse d-flex justify-content-centerjustify-content-start justify-content-md-center align-items-center"
+                            data-toggle="modal" data-target="#withdraw-funds">
+                            <img src="img/money-send.png" alt="">
+                            <span>Вывести средства</span>
+                        </button>
+                        <button
+                            class="add_balanse d-flex justify-content-start justify-content-md-center align-items-center"
+                            data-toggle="modal" data-target="#pay">
+                            <img src="img/card-tick.png" alt="">
+                            <span>Оплатить</span>
+                        </button>
+                        <button
+                            class="add_balanse d-flex justify-content-start justify-content-md-center align-items-center"
+                            data-toggle="modal" data-target="#history">
+                            <img src="img/document.png" alt="">
+                            <span>История</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-3 container-chat">
+                    <div class="col-md-4 col-lg-3 col-xl-3">
+                        <!-- <div class="patients">
+                            <select name="patients" id="" class="js-example-basic-single">
+                                <option value="">Дмитрий Ефремов</option>
+                                <option value="">Антон Иванов</option>
+                            </select>
+                        </div> -->
+                        <div class="left">
+                            <div class="top">
+                                <input type="text" placeholder="Search" />
+                                <a href="javascript:;" class="search"></a>
+                            </div>
+                            <ul class="people">
+                                <li class="person" data-chat="person1">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/382994/thomas.jpg" alt="" />
+                                    <span class="name">Thomas Bangalter</span>
+                                    <span class="time">2:09 PM</span>
+                                    <span class="preview">I was wondering...</span>
+                                </li>
+                                <li class="person" data-chat="person2">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/382994/dog.png" alt="" />
+                                    <span class="name">Dog Woofson</span>
+                                    <span class="time">1:44 PM</span>
+                                    <span class="preview">I've forgotten how it felt before</span>
+                                </li>
+                                <li class="person" data-chat="person3">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/382994/louis-ck.jpeg"
+                                        alt="" />
+                                    <span class="name">Louis CK</span>
+                                    <span class="time">2:09 PM</span>
+                                    <span class="preview">But we’re probably gonna need a new carpet.</span>
+                                </li>
+                                <li class="person" data-chat="person4">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/382994/bo-jackson.jpg"
+                                        alt="" />
+                                    <span class="name">Bo Jackson</span>
+                                    <span class="time">2:09 PM</span>
+                                    <span class="preview">It’s not that bad...</span>
+                                </li>
+                                <li class="person" data-chat="person5">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/382994/michael-jordan.jpg"
+                                        alt="" />
+                                    <span class="name">Michael Jordan</span>
+                                    <span class="time">2:09 PM</span>
+                                    <span class="preview">Wasup for the third time like is
+                                        you blind bitch</span>
+                                </li>
+                                <li class="person" data-chat="person6">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/382994/drake.jpg" alt="" />
+                                    <span class="name">Drake</span>
+                                    <span class="time">2:09 PM</span>
+                                    <span class="preview">howdoyoudoaspace</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-4 col-xl-4">
+                        <div class="right">
+                            <div class="top"><span>To: <span class="name">Dog Woofson</span></span></div>
+                            <div class="chat" data-chat="person1">
+                                <div class="conversation-start">
+                                    <span>Today, 6:48 AM</span>
+                                </div>
+                                <div class="bubble you">
+                                    Hello,
+                                </div>
+                                <div class="bubble you">
+                                    it's me.
+                                </div>
+                                <div class="bubble you">
+                                    I was wondering...
+                                </div>
+                            </div>
+                            <div class="chat" data-chat="person2">
+                                <div class="conversation-start">
+                                    <span>Today, 5:38 PM</span>
+                                </div>
+                                <div class="bubble you">
+                                    Hello, can you hear me?
+                                </div>
+                                <div class="bubble you">
+                                    I'm in California dreaming
+                                </div>
+                                <div class="bubble me">
+                                    ... about who we used to be.
+                                </div>
+                                <div class="bubble me">
+                                    Are you serious?
+                                </div>
+                                <div class="bubble you">
+                                    When we were younger and free...
+                                </div>
+                                <div class="bubble you">
+                                    I've forgotten how it felt before
+                                </div>
+                            </div>
+                            <div class="chat" data-chat="person3">
+                                <div class="conversation-start">
+                                    <span>Today, 3:38 AM</span>
+                                </div>
+                                <div class="bubble you">
+                                    Hey human!
+                                </div>
+                                <div class="bubble you">
+                                    Umm... Someone took a shit in the hallway.
+                                </div>
+                                <div class="bubble me">
+                                    ... what.
+                                </div>
+                                <div class="bubble me">
+                                    Are you serious?
+                                </div>
+                                <div class="bubble you">
+                                    I mean...
+                                </div>
+                                <div class="bubble you">
+                                    It’s not that bad...
+                                </div>
+                                <div class="bubble you">
+                                    But we’re probably gonna need a new carpet.
+                                </div>
+                            </div>
+                            <div class="chat" data-chat="person4">
+                                <div class="conversation-start">
+                                    <span>Yesterday, 4:20 PM</span>
+                                </div>
+                                <div class="bubble me">
+                                    Hey human!
+                                </div>
+                                <div class="bubble me">
+                                    Umm... Someone took a shit in the hallway.
+                                </div>
+                                <div class="bubble you">
+                                    ... what.
+                                </div>
+                                <div class="bubble you">
+                                    Are you serious?
+                                </div>
+                                <div class="bubble me">
+                                    I mean...
+                                </div>
+                                <div class="bubble me">
+                                    It’s not that bad...
+                                </div>
+                            </div>
+                            <div class="chat" data-chat="person5">
+                                <div class="conversation-start">
+                                    <span>Today, 6:28 AM</span>
+                                </div>
+                                <div class="bubble you">
+                                    Wasup
+                                </div>
+                                <div class="bubble you">
+                                    Wasup
+                                </div>
+                                <div class="bubble you">
+                                    Wasup for the third time like is <br />you blind bitch
+                                </div>
+
+                            </div>
+                            <div class="chat" data-chat="person6">
+                                <div class="conversation-start">
+                                    <span>Monday, 1:27 PM</span>
+                                </div>
+                                <div class="bubble you">
+                                    So, how's your new phone?
+                                </div>
+                                <div class="bubble you">
+                                    You finally have a smartphone :D
+                                </div>
+                                <div class="bubble me">
+                                    Drake?
+                                </div>
+                                <div class="bubble me">
+                                    Why aren't you answering?
+                                </div>
+                                <div class="bubble you">
+                                    howdoyoudoaspace
+                                </div>
+                                <div class="bubble me">
+                                    Why aren't you answering?
+                                </div>
+                                <div class="bubble you">
+                                    howdoyoudoaspace
+                                </div>
+                                <div class="bubble me">
+                                    Why aren't you answering?
+                                </div>
+                                <div class="bubble you">
+                                    howdoyoudoaspace
+                                </div>
+                                <div class="bubble me">
+                                    Why aren't you answering?
+                                </div>
+                                <div class="bubble you">
+                                    howdoyoudoaspace
+                                </div>
+                                <div class="bubble me">
+                                    Why aren't you answering?
+                                </div>
+                                <div class="bubble you">
+                                    howdoyoudoaspace
+                                </div>
+                                <div class="bubble me">
+                                    Why aren't you answering?
+                                </div>
+                                <div class="bubble you">
+                                    howdoyoudoaspace
+                                </div>
+                                <div class="bubble me">
+                                    Why aren't you answering?
+                                </div>
+                                <div class="bubble you">
+                                    howdoyoudoaspace
+                                </div>
+                            </div>
+                            <div class="write">
+                                <a href="javascript:;" class="write-link attach"></a>
+                                <input type="text" />
+                                <a href="javascript:;" class="write-link smiley"></a>
+                                <a href="javascript:;" class="write-link send"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-5 mt-lg-0 col-lg-5 col-xl-5">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-12">
+                                <div class="info_clinic d-flex justify-content-start align-items-start">
+                                    <a href="#"><img src="img/settings.png" alt=""></a>
+                                    <div class="info">
+                                        <p class="name">Евроонко</p>
+                                        <p class="city">Москва</p>
+                                    </div>
+                                    <p class="id">ID <span>10003</span></p>
+                                    <div class="receipt align-items-start d-flex">
+                                        <button
+                                            class="bill ml-2 d-flex justify-content-start justify-content-md-center align-items-center"
+                                            data-toggle="modal" data-target="#bill">
+                                            <img src="img/receipt.png" alt="">
+                                            <span>Выставить счет</span></button>
+                                        <!-- <img src="img/receipt.png" alt="">
+                                        <a href="#" data-toggle="modal" data-target="#bill">Выставить счет</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-12">
+                                <div class="uplift">
+                                    <p class="green_p">Хотите быть первыми?</p>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Категория</th>
+                                                <th>Место</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Город</td>
+                                                <td>10</td>
+                                                <td><a href="#">Поднять в поиске</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Кардиология</td>
+                                                <td>10</td>
+                                                <td><a href="#">Поднять в поиске</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Онкология</td>
+                                                <td>10</td>
+                                                <td><a href="#">Поднять в поиске</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Хирургия</td>
+                                                <td>10</td>
+                                                <td><a href="#">Поднять в поиске</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 data_pacient">
+                        <div>
+                            <span class="fio">Дмитрий Ефремов</span>
+                            <span class="code">A36</span>
+                            <span class="code">G66</span>
+                        </div>
+                        <p>45 лет</p>
+                        <p>Россия, Тула</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="info-table">
+
+                            <table class="table text-center table-bordered ">
+                                <thead>
+                                    <tr class="top_info">
+                                        <th colspan="5">
+                                            <div class="info_number">
+                                                <p>ПОКАЗАНЫ <span>3</span> ИЗ <span>3</span> ЗАПИСИ</p>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Пациент</th>
+                                        <th scope="col">Файл</th>
+                                        <th scope="col">Статус</th>
+                                        <th scope="col">Стоимость</th>
+                                        <th scope="col">Действие</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Дмитрий Ефремов</th>
+                                        <td>
+                                            <a href="#"><img src="img/outlined.png" alt=""
+                                                    style="margin-right: 14px;"></a>
+                                            <a href="#"><img src="img/download.png" alt=""></a>
+                                        </td>
+                                        <td>Обсуждается</td>
+                                        <td><input type="text" placeholder="Введите сумму"></td>
+                                        <td><a href="#">Предложить</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Дмитрий Ефремов</th>
+                                        <td>
+                                            <a href="#"><img src="img/outlined.png" alt=""
+                                                    style="margin-right: 14px;"></a>
+                                            <a href="#"><img src="img/download.png" alt=""></a>
+                                        </td>
+                                        <td>Выполняется</td>
+                                        <td>1 000$</td>
+                                        <td><a href="#">Отправить мнение</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Дмитрий Ефремов</th>
+                                        <td>
+                                            <a href="#"><img src="img/outlined.png" alt=""
+                                                    style="margin-right: 14px;"></a>
+                                            <a href="#"><img src="img/download.png" alt=""></a>
+                                        </td>
+                                        <td>Завершен</td>
+                                        <td>1 000$</td>
+                                        <td><a href="#">Подробнее</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="">
+                <div class="row">
+                    <div class="col-md-5 offset-md-1 offset-lg-0  col-12 col-lg-3 order-lg-first order-2">
+                        <div class="contacts">
+                            <!-- <p class="head">Контакты</p> -->
+                            <a href="#" class="d-flex justify-content-start align-items-center"><span
+                                    class="map"></span>
+                                <p> 184 Lorem Rd, St Ipsum Road PLC 3021, London</p><br>
+                            </a>
+                            <a href="#" class="d-flex justify-content-start align-items-center"><span
+                                    class="phone"></span>
+                                <p>+372 521 30 60</p><br>
+                            </a>
+                            <a href="#" class="d-flex justify-content-start align-items-center"><span
+                                    class="contact"></span>
+                                <p>Contact@company.com</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-12 col-lg-7 order-1 ">
+                        <div class="contacts2 d-md-flex justify-content-around ">
+                            <div class="above">
+                                <a href="#">
+                                    <p>О нас</p>
+                                </a>
+                                <a href="#">
+                                    <p>Как стать участником экспо</p>
+                                </a>
+                                <a href="#">
+                                    <p>Связаться с нами</p>
+                                </a>
+                            </div>
+                            <div class="above">
+                                <a href="#">
+                                    <p>Пациентам</p>
+                                </a>
+                                <a href="#">
+                                    <p>Клиникам </p>
+                                </a>
+                                <a href="#">
+                                    <p>Рекламодаелям</p>
+                                </a>
+                            </div>
+                            <div class="above">
+
+                                <a href="#">
+                                    <p>Способы оплаты услуг</p>
+                                </a>
+                                <a href="#">
+                                    <p>Публичная оферта</p>
+                                </a>
+                                <a href="#">
+                                    <p>Вопросы и ответы</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-12 col-lg-2 order-md-last order-lg-last order-3">
+                        <div class="contacts3">
+                            <p class="head">Подпишитесь прямо сейчас</p>
+                            <p>Подпишитесь на рассылку новостей и получайте важную информацию раньше всех.</p>
+                            <div class="input-group search_al">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <img src="img/sent.png" alt="">
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div
+                        class="col-8 offset-2 col-md-8 offset-md-2 col-lg-4 offset-lg-4 d-flex justify-content-around soc_link">
+                        <a href="javascript:void(0);" class="in"></a>
+                        <a href="javascript:void(0);" class="fb"></a>
+                        <a href="javascript:void(0);" class="inst"></a>
+                        <a href="javascript:void(0);" class="youtube"></a>
+                        <a href="javascript:void(0);" class="vk"></a>
+                        <a href="javascript:void(0);" class="tiktok"></a>
+                        <a href="javascript:void(0);" class="ok"></a>
+                        <a href="javascript:void(0);" class="twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+-->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

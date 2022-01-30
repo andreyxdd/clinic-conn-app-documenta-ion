@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/menu.css">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/component.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/lightslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <script src="js/modernizr.custom.js"></script>
+
+    <title>worldmedexpo</title>
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="container inner_div d-block d-md-block">
+            <div class="row">
+                <div class="col-md-3 col-lg-2  col-8 ">
+                    <a href="#" class=""><img src="img/logo.png" alt="" class="logo"></a>
+                </div>
+                <div class="col-2 offset-2 d-md-none">
+                    <a href="#"><span class="burger"></span></a>
+                </div>
+                <div
+                    class="col-md-9 col-lg-9 offset-lg-1 d-flex align-items-center justify-content-between col-12 flex-wrap flex-md-nowrap">
+                    <input type="text" placeholder="Страна">
+                    <input type="text" placeholder="Город">
+                    <input type="text" placeholder="Название диагноза">
+                    <input type="text" placeholder="Код диагноза">
+                    <button class="search_but">Поиск</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="top_section  d-md-block">
+        <div class="container">
+            <div class="row " style="padding-top: 0px; padding-bottom: 15px;">
+                <div class="col-8 d-md-none">
+                    <a href="#" class=""><img src="img/logo.png" alt="" class="logo"></a>
+                </div>
+                <div class="col-2 offset-2 d-md-none">
+                    <a href="#"><span class="close"></span></a>
+                </div>
+                <div
+                    class="col-md-3 col-lg-2 col-sm-6 col-12 align-items-center d-flex justify-content-center justify-content-md-end">
+                    <div id="menu-trend" class="menu-trend">
+
+                        <a href="#"> Направления</a>
+                        <div class="trend">
+                            <button class="close_trend d-xl-none"><img src="img/close-bluel.png" alt=""></button>
+                            <ul>
+                                <li>
+                                    <p>А</p>
+                                    <a href="#">Акушерство и гинекология</a>
+                                    <a href="#">Аутоиммунные заболевания</a>
+                                </li>
+                                <li>
+                                    <p>Г</p>
+                                    <a href="#">Гастроэнтерология</a>
+                                </li>
+                                <li>
+                                    <p>Д</p>
+                                    <a href="#">Детская кардиохирургия</a>
+                                    <a href="#">Детская нейрохирургия</a>
+                                    <a href="#">Детская нейрохирургия</a>
+                                    <a href="#">Диагностика</a>
+                                </li>
+                                <li>
+                                    <p>И</p>
+                                    <a href="#">Иммунология</a>
+                                    <a href="#">Инфекционные болезни</a>
+
+                                </li>
+                                <li>
+                                    <p>К</p>
+                                    <a href="#">Кардиология</a>
+                                    <a href="#">Кардиохирургия</a>
+                                </li>
+                                <li>
+                                    <p>М</p>
+                                    <a href="#">Маммология</a>
+                                </li>
+                                <li>
+                                    <p>Н</p>
+                                    <a href="#">Наркология и алкоголизм</a>
+                                    <a href="#">Неврология</a>
+                                    <a href="#">Нейрохирургия</a>
+                                    <a href="#">Нефрология</a>
+                                </li>
+                                <li>
+                                    <p>О</p>
+                                    <a href="#">Ожирение</a>
+                                    <a href="#">Онкогематология</a>
+                                    <a href="#">Онкология</a>
+                                    <a href="#">Ортопедия и травматология</a>
+                                    <a href="#">Оториноларингология</a>
+                                    <a href="#">Офтальмология</a>
+                                </li>
+                                <li>
+                                    <p>П</p>
+                                    <a href="#">Педиатрия</a>
+                                    <a href="#">Пластическая хирургия</a>
+                                    <a href="#">Проктология</a>
+                                    <a href="#">Психиатрия</a>
+                                    <a href="#">Пульмонология</a>
+                                </li>
+                                <li>
+                                    <p>Р</p>
+                                    <a href="#">Реабилитация</a>
+                                    <a href="#">Ревмонология</a>
+                                    <a href="#">Репродуктология</a>
+                                </li>
+                                <li>
+                                    <p>С</p>
+                                    <a href="#">Санаторное лечение</a>
+                                    <a href="#">Сексология</a>
+                                    <a href="#">Стоматология</a>
+                                    <a href="#">Сосудистая хирургия</a>
+                                    <a href="#">Спинальная хирургия</a>
+                                </li>
+                                <li>
+                                    <p>Т</p>
+                                    <a href="#">Терапия</a>
+                                    <a href="#">Трансплатология</a>
+                                </li>
+                                <li>
+                                    <p>У</p>
+                                    <a href="#">Урология</a>
+                                </li>
+                                <li>
+                                    <p>Ф</p>
+                                    <a href="#">Флебология</a>
+                                </li>
+                                <li>
+                                    <p>Х</p>
+                                    <a href="#">Хирургия</a>
+                                    <a href="#">Хирургия кисти</a>
+                                    <a href="#">Хирургия снижения веса</a>
+                                </li>
+                                <li>
+                                    <p>Ч</p>
+                                    <a href="#">Чек-ап обследование</a>
+                                    <a href="#">Челюстно-лицевая хирургия</a>
+                                </li>
+                                <li>
+                                    <p>Э</p>
+                                    <a href="#">Эндокринология</a>
+                                    <a href="#">Эстетическая медицина
+                                        и косметология</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-md-7 col-lg-6 offset-lg-1 desc_a d-md-flex justify-content-around align-items-center col-12 ">
+                    <a class="d-md-inline " href="javascript:void(0);">Пациентам</a>
+                    <a class="d-md-inline " href="javascript:void(0);">Клиникам</a>
+                    <a class="d-md-inline " href="javascript:void(0);">Рекламодателям </a>
+                    <hr class="a_hr d-md-none">
+                </div>
+                <div
+                    class="autor offset-md-0 col-md-2 offset-lg-2 col-lg-1  d-md-flex justify-content-md-end justify-content-center align-items-center col-12 flex-nowrap col-sm-4">
+
+                    <!-- <a href="javascript:void(0);"><span class="autor"></span></a> -->
+                    <button type="button" class="izbr text-center ">
+                        <img src="img/Shape.png" alt="">
+                        <span class="num">2</span>
+                        <span class="d-md-none" style="color: #FFFFFF; font-size: 14px; font-family: Gilroy medium;">
+                            Просмотры</span>
+                    </button>
+                    <button type="button" class="izbr text-center ">
+                        <img src="img/izbr.png" alt="">
+                        <span class="num">2</span>
+                        <span class="d-md-none" style="color: #FFFFFF; font-size: 14px; font-family: Gilroy medium;">
+                            Избранное</span>
+                    </button>
+                    <button type="button" class="text-center" data-toggle="modal" data-target="#autor">
+                        <img src="img/autor.png" alt="">
+                        <span class="d-md-none" style="color: #FFFFFF; font-size: 14px; font-family: Gilroy medium;">
+                            Профиль</span>
+                </div>
+            </div>
+    </section>
+    <section class="inner_page">
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 my-4">
+                        <a href="#"><img src="img/back.png" alt="back" class="back"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wpap-ul select-files inner-pages ">
+                            <ul class="nav nav-pills flex-nowrap" id="pills-tab-inner" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="for_clinics" data-toggle="pill" href="#pills-clinics"
+                                        role="tab" aria-controls="pills-clinics" aria-selected="true">Клиникам</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link " id="advantage" data-toggle="pill" href="#pills-advantage"
+                                        role="tab" aria-controls="pills-advantage"
+                                        aria-selected="false">Преимущества</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link " id="registration" data-toggle="pill" href="#pills-registration"
+                                        role="tab" aria-controls="pills-registration"
+                                        aria-selected="false">Регистрация</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link " id="priorities" data-toggle="pill" href="#pills-priorities"
+                                        role="tab" aria-controls="pills-priorities" aria-selected="false">Приоритеты в
+                                        показах</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link " id="reclame" data-toggle="pill" href="#pills-reclame"
+                                        role="tab" aria-controls="pills-reclame" aria-selected="false">Реклама</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="pills-tab-innerContent">
+                            <div class="tab-pane fade show active" id="pills-clinics" role="tabpanel"
+                                aria-labelledby="pills-for_clinics">
+                                <div class="top-block">
+                                    <div class="row">
+                                        <div class="col-md-6 offset-md-1">
+                                            <div class="info text-center text-md-left">
+                                                <p class="bold-p">Возможности Video Clinic</p>
+                                                <p class="banner-p">Video Clinic соединяет рынок и объединяет
+                                                    пациентов и клиники в
+                                                    этом секторе, продвигая сетевое взаимодействие и партнерство,
+                                                    подтверждая свою эффективность в качестве платформы, которая
+                                                    способствует развитию медицины.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="div-info">
+                                    <div class="row row-recl">
+                                        <div class="col-md-4">
+                                            <div class="recl-div">
+                                                <div class="top-recl d-flex align-items-center">
+                                                    <img src="img/Banners/routing-2.svg" alt="">
+                                                    <p>Прямая коммуникация между пациентами и клиниками
+                                                    </p>
+                                                </div>
+                                                <p>На выставке есть воможность постоянно поддерживать прямую связь
+                                                    между клиниками и пациентами </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="recl-div">
+                                                <div class="top-recl d-flex align-items-center">
+                                                    <img src="img/Banners/messages.svg" alt="">
+                                                    <p>Онлайн-чат с экспертами</p>
+                                                </div>
+                                                <p>Благодаря современным технологиям у посетителей есть возможность
+                                                    общаться с экспертами онлайн</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="recl-div">
+                                                <div class="top-recl d-flex align-items-center">
+                                                    <img src="img/Banners/monitor-mobbile.svg" alt="">
+                                                    <p>Широкий охват аудитории </p>
+                                                </div>
+                                                <p>Онлайн-платформа позволяет посещать выставку не выходя из дома,
+                                                    что существенно расширяет географию участников</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5 offset-md-1 col-xl-3 offset-xl-2">
+                                            <div class="div_list">
+                                                <p>Участники</p>
+                                                <ul>
+                                                    <li>санаторно-курортные учреждения, оздоровительные пансионаты
+                                                    </li>
+                                                    <li>медицинские центры и клиники</li>
+                                                    <li>центры эстетической медицины</li>
+                                                </ul>
+                                            </div>
+                                            <div class="div_list mt-5">
+                                                <p>Посетители</p>
+                                                <ul>
+                                                    <li>санаторно-курортные учреждения, оздоровительные пансионаты
+                                                    </li>
+                                                    <li>медицинские центры и клиники</li>
+                                                    <li>центры эстетической медицины</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="pills-advantage" role="tabpanel"
+                                aria-labelledby="pills-advantage">
+                                <p class="bold-p text-center mt-4 mb-5">Решите все бизнес- задачи</p>
+                                <div class="row">
+                                    <div
+                                        class="col-md-12 offset-md-0 col-xl-10 offset-xl-1 justify-content-between d-flex flex-wrap flex-lg-nowrap">
+                                        <div class="task">
+                                            <img src="img/task/1.png" alt="">
+                                            <p>Найдите новых партнеров
+                                                и клиентов</p>
+                                        </div>
+                                        <div class="task">
+                                            <img src="img/task/2.png" alt="">
+                                            <p>Покажите свои
+                                                услуги “лицом
+                                                к лицу”</p>
+                                        </div>
+                                        <div class="task">
+                                            <img src="img/task/3.png" alt="">
+                                            <p>Укрепите имидж
+                                                своей компании</p>
+                                        </div>
+                                        <div class="task">
+                                            <img src="img/task/4.png" alt="">
+                                            <p>Делитесь опытом</p>
+                                        </div>
+                                        <div class="task">
+                                            <img src="img/task/5.png" alt="">
+                                            <p>Найдите свой
+                                                путь к успешному бизнесу</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-center p500 mb-3">Наши посетители - Ваши заказчики!</p>
+                                <p class="text-center p500">Высокая коммерческая эффективность участия</p>
+                            </div>
+                            <div class="tab-pane fade " id="pills-registration" role="tabpanel"
+                                aria-labelledby="pills-registration">
+                                <form action="" class="pacient-form">
+                                    <div class="form-group row">
+                                        <div class="col-md-4 col-lg-4 col-xl-3">
+                                            <label for="">Название</label>
+                                            <div class="">
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-2 col-xl-2">
+                                            <label for="">Страна</label>
+                                            <div class="">
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-2 col-xl-2">
+                                            <label for="">Город</label>
+                                            <div class="">
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3 col-xl-3">
+                                            <label for="">Почтовый адрес</label>
+                                            <div class="">
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3 col-xl-3">
+                                            <label for="">Телефон</label>
+                                            <div class="">
+                                                <input type="tel" required="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                                    class="form-control" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3 col-xl-3">
+                                            <label for="">Сайт</label>
+                                            <div class="">
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3 col-xl-3">
+                                            <label for="">E-mail</label>
+                                            <div class="">
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3 col-xl-3">
+                                        </div>
+                                        <div class="col-md-4 col-lg-3 col-xl-3 ">
+                                            <label for="">Контактное лицо</label>
+                                            <div class="">
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3 col-xl-3">
+                                            <label for="">Должность</label>
+                                            <div class="">
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <p class="normal_p mb-4">В графе напротив нужной директории просим
+                                                отметить
+                                                категорию, к
+                                                которой относится организация</p>
+                                            <div class="checkbox ">
+                                                <label>
+                                                    <input type="checkbox" checked="checked">
+                                                    <span>Санаторно-курортные учреждения, оздоровительные
+                                                        пансионаты</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox ">
+                                                <label>
+                                                    <input type="checkbox">
+                                                    <span>Медицинские центры и клиники</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox ">
+                                                <label>
+                                                    <input type="checkbox">
+                                                    <span>Центры эстетической медицины</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-6 col-xl-6"></div>
+                                        <div class="col-md-4 col-lg-6 col-xl-6">
+                                            <label for="">Другое</label>
+                                            <div class="">
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-6 col-xl-6"></div>
+                                        <div class="col-md-4 col-lg-3 col-xl-3 mt-4">
+                                            <label for="">Введите текст с картинки:</label>
+                                            <img src="img/capcha.png" alt="">
+                                            <div class="mt-3">
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div
+                                            class="col-md-12 col-lg-12 col-xl-9 d-flex flex-wrap flex-md-nowrap justify-content-end">
+                                            <button class="search_but save">Сохранить</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade " id="pills-priorities" role="tabpanel"
+                                aria-labelledby="pills-priorities">
+                                <div class="row">
+                                    <div class="col-md-6 prior">
+                                        <p class="normal_p mb-3" style="max-width: 336px;">На данной платформе вы
+                                            можете
+                                            воспользоваться
+                                            возможностью получить приоритет в показе вашей организации потенциальным
+                                            клиентам.</p>
+                                        <p style="font-weight: 600; font-size: 18px; line-height: 21px;">Критерии,
+                                            по которым можно настроить приоритет в показе:</p>
+                                        <ul class="mt-3">
+                                            <li>категория</li>
+                                            <li>город</li>
+                                            <li>код диагноза</li>
+                                        </ul>
+                                        <p class="normal_p mt-4">По вопросам настройки обращаться: +372 521 30 60
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="img/screen.png" alt="" class="slide_screen">
+                                        <!-- <div class="slider-div slider-div2 ">
+                                                <p class="head-div">ТОП-30 клиник </p>
+                                                <div class="slider-top2">
+                                                    <div class="slid">
+                                                        <img src="img/image14.png" alt="">
+                                                        <p>НМИЦ им. Алмазова</p>
+                                                        <p>Санкт-Петербург</p>
+                                                        <div class="link-slider">
+                                                            <a href="#" class="active">
+                                                                <span></span>
+                                                            </a>
+                                                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slid">
+                                                        <img src="img/image13.png" alt="">
+                                                        <p>Евроонко</p>
+                                                        <p>Москва</p>
+                                                        <div class="link-slider">
+                                                            <a href="#">
+                                                                <span></span>
+                                                            </a>
+                                                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slid">
+                                                        <img src="img/image10.png" alt="">
+                                                        <p>УКЛРЦ им. В.В. Тетюхина</p>
+                                                        <p>Нижний Тагил</p>
+                                                        <div class="link-slider">
+                                                            <a href="#">
+                                                                <span></span>
+                                                            </a>
+                                                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slid">
+                                                        <img src="img/image9.png" alt="">
+                                                        <p>Клиника Кивач</p>
+                                                        <p>Карелия</p>
+                                                        <div class="link-slider">
+                                                            <a href="#">
+                                                                <span></span>
+                                                            </a>
+                                                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slid">
+                                                        <img src="img/image14.png" alt="">
+                                                        <p>НМИЦ им. Алмазова</p>
+                                                        <p>Санкт-Петербург</p>
+                                                        <div class="link-slider">
+                                                            <a href="#" class="active">
+                                                                <span></span>
+                                                            </a>
+                                                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="slid">
+                                                        <img src="img/image13.png" alt="">
+                                                        <p>Евроонко</p>
+                                                        <p>Москва</p>
+                                                        <div class="link-slider">
+                                                            <a href="#">
+                                                                <span></span>
+                                                            </a>
+                                                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="slid">
+                                                        <img src="img/image10.png" alt="">
+                                                        <p>УКЛРЦ им. В.В. Тетюхина</p>
+                                                        <p>Нижний Тагил</p>
+                                                        <div class="link-slider">
+                                                            <a href="#">
+                                                                <span></span>
+                                                            </a>
+                                                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="slid">
+                                                        <img src="img/image9.png" alt="">
+                                                        <p>Клиника Кивач</p>
+                                                        <p>Карелия</p>
+                                                        <div class="link-slider">
+                                                            <a href="#">
+                                                                <span></span>
+                                                            </a>
+                                                            <a href="#">Подробнее <img src="img/arr.png" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="pills-reclame" role="tabpanel"
+                                aria-labelledby="pills-reclame">
+                                <div class="reclam-div">
+                                    <p class="bold-p">Возможности Video Clinic</p>
+                                    <p style="font-size: 18px; line-height: 21px; max-width: 490px">Video Clinic
+                                        соединяет рынок и
+                                        объединяет пациентов и клиники в этом
+                                        секторе, продвигая сетевое взаимодействие и партнерство, подтверждая свою
+                                        эффективность в качестве платформы, которая способствует развитию медицины.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="">
+                <div class="row">
+                    <div class="col-md-5 offset-md-1 offset-lg-0  col-12 col-lg-3 order-lg-first order-2">
+                        <div class="contacts">
+                            <!-- <p class="head">Контакты</p> -->
+                            <a href="#" class="d-flex justify-content-start align-items-center"><span
+                                    class="map"></span>
+                                <p> 184 Lorem Rd, St Ipsum Road PLC 3021, London</p><br>
+                            </a>
+                            <a href="#" class="d-flex justify-content-start align-items-center"><span
+                                    class="phone"></span>
+                                <p>+372 521 30 60</p><br>
+                            </a>
+                            <a href="#" class="d-flex justify-content-start align-items-center"><span
+                                    class="contact"></span>
+                                <p>Contact@company.com</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-12 col-lg-7 order-1 ">
+                        <div class="contacts2 d-md-flex justify-content-around ">
+                            <div class="above">
+                                <a href="#">
+                                    <p>О нас</p>
+                                </a>
+                                <a href="#">
+                                    <p>Как стать участником экспо</p>
+                                </a>
+                                <a href="#">
+                                    <p>Связаться с нами</p>
+                                </a>
+                            </div>
+                            <div class="above">
+                                <a href="#">
+                                    <p>Пациентам</p>
+                                </a>
+                                <a href="#">
+                                    <p>Клиникам </p>
+                                </a>
+                                <a href="#">
+                                    <p>Рекламодаелям</p>
+                                </a>
+                            </div>
+                            <div class="above">
+
+                                <a href="#">
+                                    <p>Способы оплаты услуг</p>
+                                </a>
+                                <a href="#">
+                                    <p>Публичная оферта</p>
+                                </a>
+                                <a href="#">
+                                    <p>Вопросы и ответы</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-12 col-lg-2 order-md-last order-lg-last order-3">
+                        <div class="contacts3">
+                            <p class="head">Подпишитесь прямо сейчас</p>
+                            <p>Подпишитесь на рассылку новостей и получайте важную информацию раньше всех.</p>
+                            <div class="input-group search_al">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <img src="img/sent.png" alt="">
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div
+                        class="col-8 offset-2 col-md-8 offset-md-2 col-lg-4 offset-lg-4 d-flex justify-content-around soc_link">
+                        <a href="javascript:void(0);" class="in"></a>
+                        <a href="javascript:void(0);" class="fb"></a>
+                        <a href="javascript:void(0);" class="inst"></a>
+                        <a href="javascript:void(0);" class="youtube"></a>
+                        <a href="javascript:void(0);" class="vk"></a>
+                        <a href="javascript:void(0);" class="tiktok"></a>
+                        <a href="javascript:void(0);" class="ok"></a>
+                        <a href="javascript:void(0);" class="twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+-->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
